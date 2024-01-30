@@ -6,6 +6,7 @@ import { useState } from 'react'
 
 
 export function StartGame({ setGameState ,solution}) {
+  // LetterStatus State
   const generateLetterStatuses = function () {
     const alphabet = [...'abcdefghijklmnopqrstuvwxyz'.toUpperCase()];
     const newLetterStatus = {}
@@ -25,7 +26,7 @@ export function StartGame({ setGameState ,solution}) {
      setGameState({state:"EndGame",isWinner:true});
 
   }
-  
+  // Score State
   const [score, setScore] = useState(100)
   const handelScore = (letter) => {
     if (solution.word.indexOf(letter) === -1) {
@@ -40,7 +41,6 @@ export function StartGame({ setGameState ,solution}) {
     }
 
   }
-
   const selectLetter = (letter) => {
     handelLetterStatus(letter);
     handelScore(letter);
