@@ -45,6 +45,30 @@
   padding-left: 3px;
 }
 #root{
-  margin: 20px;
+  
   font-size: 20px;
+  height: 100vh;
+  width: 100%vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(154, 207, 240, 0.916);
+}
+.selectedLetter{
+  text-decoration: line-through;
+}
+.solution{
+  text-decoration: none !important;
+}
+div.solution > span.selectedLetter.letter {
+  text-decoration: none;
+}
+.container{
+  margin: 40px;
+  align-items: center;
+}
+.title{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }

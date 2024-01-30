@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Letter({letter}) {
+export  function Letter({letter, letterStatus, handelLetterStatus}) {
     
 
     return (
         <>
-            <li className="letter">{letter}</li>
+            {letterStatus ? <span className=" selectedLetter letter">{letter}</span> : <span onClick={() => handelLetterStatus(letter) } className=" letter">{letter}</span> }
         </>
     )
 }

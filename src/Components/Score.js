@@ -1,11 +1,14 @@
 import React from 'react'
 
-export function Score({number}) {
-    
+export function Score({score}) {
+
 
     return (
-        <>
-            <div>{number}</div>
+        <>  
+        {
+            <div>{score}</div>
+        }
+            
         </>
     )
 }
